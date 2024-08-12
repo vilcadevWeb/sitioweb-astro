@@ -1,0 +1,23 @@
+{
+    "data":
+    [
+        {
+          "id": 1,
+          "nombre": "Proyecto 1",
+          "img":"/src/assets/imgs/proyecto1.png",
+          "introduccion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas facere, dolorem omnis laudantium necessitatibus pariatur asperiores dolore ea eius officiis, mollitia, itaque maiores consequuntur! Atque rem aliquam est reprehenderit modi!",
+          "desarrolloTitle": "Implementación del Proyecto",
+          "desarrollo": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas facere, dolorem omnis laudantium necessitatibus pariatur asperiores dolore ea eius officiis, mollitia, itaque maiores consequuntur! Atque rem aliquam est reprehenderit modi!. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas facere, dolorem omnis laudantium necessitatibus pariatur asperiores dolore ea eius officiis, mollitia, itaque maiores consequuntur! Atque rem aliquam est reprehenderit modi!"
+      },
+      {
+        "id": 2,
+        "nombre": "Proyecto 2",
+        "img":"/src/assets/imgs/proyecto2.png",
+        "introduccion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas facere, dolorem omnis laudantium necessitatibus pariatur asperiores dolore ea eius officiis, mollitia, itaque maiores consequuntur! Atque rem aliquam est reprehenderit modi!",
+        "desarrolloTitle": "Implementación del Proyecto",
+        "desarrollo": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas facere, dolorem omnis laudantium necessitatibus pariatur asperiores dolore ea eius officiis, mollitia, itaque maiores consequuntur! Atque rem aliquam est reprehenderit modi!.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas facere, dolorem omnis laudantium necessitatibus pariatur asperiores dolore ea eius officiis, mollitia, itaque maiores consequuntur! Atque rem aliquam est reprehenderit modi!"
+      }
+    ]
+    }
+    
+    

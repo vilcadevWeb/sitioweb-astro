@@ -1,0 +1,129 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import typescriptIcon from "../assets/svg/typescript.svg"
+import tailwindIcon from "../assets/svg/tailwind.svg"
+import javascriptIcon from "../assets/svg/javascript.svg"
+import gitIcon from "../assets/svg/git.svg"
+import figmaIcon from "../assets/svg/figma.svg"
+
+
+
+
+import linkedlinIcon from "../assets/svg/linkedlin.svg"
+import githubIcon from "../assets/svg/github.svg"
+import liveIcon from "../assets/svg/live.svg"
+
+
+
+
+import proyecto1 from "../assets/imgs/proyecto1.png"
+import proyecto2 from "../assets/imgs/proyecto2.png"
+
+import ProjectCard from '../components/ProjectCard.astro';
+
+import cat from "../assets/imgs/astro-cat.png"
+
+import Image from "astro/components/Image.astro";
+
+---
+<Layout title="Astrocat">
+	<section class="mx-10 mt-5">
+		<div class="grid grid-cols-1 md:grid-cols-4 gap-5">
+			<div class="md:col-span-2 bg-custom p-5 rounded-2xl">
+				<div class="flex items-center space-x-5 flex-wrap">
+					<div class="w-24 h-24 bg-gray-600 rounded-full overflow-hidden ml-4">
+						<Image src={cat} alt="cat" class="w-full h-full object-cover"></Image>
+					</div>
+					<div>
+						<h1 class="text-3xl font-bold text-cyan-50">Vilcadev</h1>
+						<p class="text-zinc-400">Profesión | Especialización</p>
+						<p class="text-cyan-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eaque laborum nemo magni, natus vel aliquid veritatis reiciendis facere? Vitae voluptas soluta architecto reiciendis nisi est voluptate alias delectus iure.</p>
+						<div class="flex space-x-3 mt-3">
+							<button class="bg-gray-700 hover:bg-gray-800 text-white font-bold py-2 px-4 rounded-full ">
+								<div class="flex items-center gap-1">
+								<Image src={linkedlinIcon} alt="linkedlin"></Image>
+								<span>Linkedlin</span>
+
+								</div>
+							  </button>
+
+							  <button class="bg-gray-700 hover:bg-gray-800 text-white font-bold py-2 px-4 rounded-full">
+
+								<div class="flex items-center gap-1">
+								<Image src={githubIcon} alt="github"></Image>
+								<span>Github</span>
+								</div>
+								
+							
+							  </button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="md:row-span-2 md:col-span-2 bg-custom p-5 rounded-2xl ">
+				<h2 class="text-3xl font-bold text-cyan-50">Experiencia</h2>
+				<div class="mt-3">
+					<h3 class="text-lg font-semibold text-zinc-400">La mejor empresa del mundo</h3>
+					<p class="text-sm text-zinc-400">ene. 2024 - abr.2024</p>
+					<p class="text-cyan-50"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, pariatur. Consequatur provident soluta maxime necessitatibus excepturi! Et accusantium quod adipisci alias modi labore aut, nihil tempora libero unde velit esse. </p>
+				</div>
+			</div>
+			<div class="md:col-span-2 bg-custom p-5 rounded-2xl">
+				<h2 class="text-3xl font-bold text-cyan-50">Tecnologías</h2>
+				<div class="grid grid-cols-2 md:grid-cols-5 gap-3 mt-3">
+					<div class=" flex justify-center">
+						<Image src={typescriptIcon} alt="typescriptIcon"></Image>
+					</div>
+					<div class=" flex justify-center">
+						<Image src={tailwindIcon} alt="tailwindIcon"></Image>
+					</div>
+					<div class=" flex justify-center">
+						<Image src={javascriptIcon} alt="jaavscriptIcon"></Image>
+					</div>
+					<div class=" flex justify-center">
+						<Image src={gitIcon} alt="gitIcon"></Image>
+					</div>
+					<div class=" flex justify-center">
+						<Image src={figmaIcon} alt="figmaIcon"></Image>
+					</div>		
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="mx-10 mt-5">
+		<div class="bg-custom p-5 rounded-2xl">
+			<h2 class="text-3xl font-bold text-cyan-50">Proyectos</h2>
+
+
+		
+				<ProjectCard 
+				    id="1" 
+					title="Proyecto 1"				
+					imageSrc={proyecto1.src} 
+					description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas facere, dolorem omnis laudantium necessitatibus pariatur asperiores dolore ea eius officiis, mollitia, itaque maiores consequuntur! Atque rem aliquam est reprehenderit modi!" 
+					githubLink="https://github.com/tu-repo"
+					liveLink="https://tu-proyecto-live"
+				/>
+
+				<ProjectCard 
+				    id="2"
+					title="Proyecto 2" 					 
+					imageSrc={proyecto2.src} 
+					description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas facere, dolorem omnis laudantium necessitatibus pariatur asperiores dolore ea eius officiis, mollitia, itaque maiores consequuntur! Atque rem aliquam est reprehenderit modi!" 
+					githubLink="https://github.com/tu-repo"
+					liveLink="https://tu-proyecto-live"
+				/>
+
+		</div>	
+	</section>
+</Layout>
+
+
+<style>
+	.bg-custom{		
+    	background-color: rgb(19 19 19);
+		border: solid 1px #3f3f3f;
+	}
+</style>
